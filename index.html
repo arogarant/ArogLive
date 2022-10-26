@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogLive</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding:0%;
+        box-sizing: border-box;
+
+    }
+    body{
+        background: linear-gradient(to bottom, #0e3947 0%, #9b0550 100%);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+    header{
+        color: white;
+    }
+    h1{
+        color: white;
+        font-family: monospace;
+    }
+    .live{
+        color: red;
+    }
+    main{
+        height: max-content;
+    }
+    main iframe{
+        width: 90vw;
+        height: 80vh;
+    }
+    footer {
+        text-align: center;
+        color: white;
+        padding: 5px;
+        
+        background: linear-gradient(to top, #0e3947 0%, #9b0550 100%);
+    }
+    .socialsContainer {
+        display: block;
+    }
+    
+    .socials {
+        margin: auto;
+        width: 5vw;
+        height: 5vh;
+        filter: invert(1);
+    }
+    
+    .socials:hover {
+        width: 6vw;
+        height: 6vh;
+        filter: invert(1);
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>
+            Arog<span class="live">Live</span>
+        </h1>
+        <p>
+            <span>[ Todays Match😀: Ireland vs England  ]
+            </span>
+        </p>
+        <p>Date : <span id="crDate"></span></p>
+    </header>
+    <hr>
+    <br>
+    <main>
+        <iframe src="https://bit.ly/3SwPmzY" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
+        <section style="color:white;">
+            <h3>➡ We are providing ⬅</h3>
+            <p>👉
+                Watch ICC Men's T20 World Cup, 2022 <span class="live">Live</span>
+            </p>
+            <p>👉
+            Buffer Free Experience ICC Men's T20 World Cup 22 
+            </p>
+            <p>👉
+                Full HD Streaming
+            </p>
+            <p>👉
+                On your Desktop and Mobile.
+            </p>
+            <p>👉
+                 Refresh page if does not work!!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p> All rights reserved to ArogLive</p>
+        <p>Contact Us - developerayu@gmail.com</p>
+        <br>
+        <div class="socialsContainer">
+            <a href=""><img class="instagramLogo , socials" src="../socials/instagramLogo.svg" alt=""></a>
+            <a href=""><img class="github , socials" src="../socials/github.svg" alt=""></a>
+            <a href=""><img class="linkedin-brands , socials" src="../socials/linkedin-brands.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+<script>
+    const d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth() + 1;
+    var year = d.getFullYear();
+    // console.log(date)
+    // console.log(month)
+    // console.log(year)
+
+    let crDate = document.getElementById("crDate");
+    crDate.innerHTML = date + "/" + month + "/" + year;
+    // crDate.innerHTML = "HEllo"
+    </script>
+</html>
